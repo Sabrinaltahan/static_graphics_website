@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفرنسي الصغير</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/wow.css">
+    <script src="assets/js/typing.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm wow animate__animated animate__fadeInDown">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="شعار الفرنسي الصغير" class="logo-img">
+                    الفرنسي الصغير
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home icon-pulse"></i> الصفحة الرئيسية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-info-circle icon-pulse"></i> عن الموقع
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">
+                                <i class="fas fa-video icon-pulse"></i> فيديوهات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sounds.html">
+                                <i class="fas fa-music icon-pulse"></i> صوتيات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entertainment.html">
+                                <i class="fas fa-gamepad icon-pulse"></i> ترفيه
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-5">
+        <!-- Hero Section -->
+        <section class="sounds-hero bg-primary text-white py-5 text-center wow animate__animated animate__fadeIn">
+            <h1 class="display-4 animate__animated animate__flash animate__infinite"><i class="fas fa-music"></i> تعلم التهجئة</h1>
+            <p id="typewriter-paragraph-label" class="lead"></p>
+                <script>
+                    var typewriter = new Typewriter('#typewriter-paragraph-label', {
+                        loop: false,
+                        delay: 50,
+                    });
+
+                    typewriter.typeString('استمع إلى الكلمات الفرنسية وتعلم كيفية تهجئتها!')
+                        .start();
+                </script>
+        </section>
+
+        <!-- Audio Clips -->
+        <section class="container py-5">
+            <div class="row">
+                <!-- Example 1 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/قطة.avif" alt="صورة قطة" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">قطة (Chat)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/قطة.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 2 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/كلب.avif" alt="صورة كلب" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">كلب (Chien)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/كلب.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Example 3 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.6s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/شجرة.avif" alt="صورة شجرة" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">شجرة (Arbre)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/شجرة.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 4 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.8s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/طائر.avif" alt="صورة طائر" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">طائر (Oiseau)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/طائر.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 5 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/سيارة.avif" alt="صورة سيارة" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">سيارة (Voiture)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/سيارة.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 6 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1.2s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/زهرة.avif" alt="صورة زهرة" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">زهرة (Fleur)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/زهرة.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 7 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1.4s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/ألوان.avif" alt="صورة ألوان" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">ألوان (couleurs)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/ألوان.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 8 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1.6s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/قلم.avif" alt="صورة قلم" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">قلم (stylo)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/قلم.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 9 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1.8s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/كتاب.avif" alt="صورة كتاب" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">كتاب (livre)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/كتاب.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 10 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1.4s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/طاولة.avif" alt="صورة طاولة" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">طاولة (tableau)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/طاولة.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 11 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1.6s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/قمر.avif" alt="صورة قمر" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">قمر (lune)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/قمر.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 12 -->
+                <div class="col-md-3 col-sm-6 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="1.8s">
+                    <div class="audio-card rounded shadow-sm">
+                        <img src="assets/img/اصوات/مدرسة.avif" alt="صورة مدرسة" class="img-fluid animate__pulse infinite-pulse">
+                        <div class="audio-card-body p-4 text-center">
+                            <h5 class="text-primary">مدرسة (école)</h5>
+                            <audio controls>
+                                <source src="assets/sounds/كلمات/مدرسة.mp3" type="audio/mp3">
+                                متصفحك لا يدعم تشغيل الصوت.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>3
+
+    <!-- Footer -->
+    <footer class="text-center bg-light py-3 mt-5 shadow-sm wow animate__animated animate__fadeInUp">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Petit Français. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

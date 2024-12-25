@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفرنسي الصغير</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/wow.css">
+    <script src="assets/js/typing.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm wow animate__animated animate__fadeInDown">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="شعار الفرنسي الصغير" class="logo-img">
+                    الفرنسي الصغير
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home icon-pulse"></i> الصفحة الرئيسية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-info-circle icon-pulse"></i> عن الموقع
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">
+                                <i class="fas fa-video icon-pulse"></i> فيديوهات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sounds.html">
+                                <i class="fas fa-music icon-pulse"></i> صوتيات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="entertainment.html">
+                                <i class="fas fa-gamepad icon-pulse"></i> ترفيه
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-5">
+        <!-- Hero Section -->
+        <section class="entertainment-hero bg-info text-white py-5 text-center wow animate__animated animate__fadeIn">
+            <h1 class="display-4 animate__animated animate__flash animate__infinite"><i class="fas fa-gamepad"></i> ترفيه</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-1s"></p>
+
+            <p id="typewriter-paragraph-label" class="lead"></p>
+                <script>
+                    var typewriter = new Typewriter('#typewriter-paragraph-label', {
+                        loop: false,
+                        delay: 50,
+                    });
+
+                    typewriter.typeString('استمتع بالتعلم مع الأنشطة التفاعلية والأصوات الممتعة باللغة الفرنسية!')
+                        .start();
+                </script>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="container py-5 text-center">
+            <h2 class="mb-4 text-primary wow animate__animated animate__zoomIn">اختر رقمًا لتسمع لفظه بالفرنسية</h2>
+            <div class="row align-items-center">
+                <!-- Video Section -->
+                <div class="col-md-3 mb-4 wow animate__animated animate__fadeInLeft">
+                    <div class="embed-container shadow-sm rounded">
+                        <video class="video-frame img-fluid rounded" controls style="object-fit: cover; width: 100%; height: 100%;">
+                            <source src="assets/video/مقدمة فيديو.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو.
+                        </video>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Buttons for numbers -->
+                <div class="col-md-6">
+                    <div class="d-flex flex-wrap justify-content-center wow animate__animated animate__fadeIn">
+                        <script>
+                            const numbers = [
+                                "واحد", "اثنان", "ثلاثة", "أربعة", "خمسة",
+                                "ستة", "سبعة", "ثمانية", "تسعة", "عشرة",
+                                "أحد عشر", "اثنا عشر", "ثلاثة عشر", "أربعة عشر", "خمسة عشر",
+                                "ستة عشر", "سبعة عشر", "ثمانية عشر", "تسعة عشر", "عشرون"
+                            ];
+                            for (let i = 0; i < numbers.length; i++) {
+                                document.write(`
+                                    <button class="btn btn-info m-2 wow animate__animated animate__pulse" onclick="playNumberSound(${i + 1})">
+                                        ${numbers[i]}
+                                    </button>
+                                `);
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Image Section -->
+                <div class="col-md-3 mb-4 wow animate__animated animate__fadeInRight">
+                    <img src="assets/img/logo-gif.gif" alt="أرقام تعليمية" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="container py-5 wow animate__animated animate__fadeInUp">
+            <div class="row">
+                <!-- Explanation -->
+                <div class="col-md-4">
+                    <div class="video-info p-3">
+                        <h5 class="text-primary wow animate__animated animate__bounceIn">حوار تعليمي بين الأرنبة وصديقها بوب</h5>
+                        <p>
+                            في هذا الفيديو الممتع، يطلب بوب من الأرنبة تعليمه بعض العبارات الأساسية باللغة الفرنسية. 
+                            استمع واستمتع بالحوار وتعلم كلمات وعبارات مفيدة بطريقة ترفيهية!
+                        </p>
+                    </div>
+                </div>
+                <!-- Video -->
+                <div class="col-md-8">
+                    <div class="embed-container shadow-sm rounded wow animate__animated animate__fadeInUp">
+                        <iframe class="video-frame" src="assets/video/حوار.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funny Section -->
+        <section class="container py-5 text-center wow animate__animated animate__fadeInUp">
+            <h2 class="mb-4 text-success wow animate__animated animate__bounceIn"><i class="fas fa-grin-squint"></i> لعبة الصور الممتعة</h2>
+            <p class="lead text-muted">استمع إلى الصوت واختر الصورة الصحيحة!</p>
+
+            <!-- First Game -->
+            <div class="game-section mb-5">
+                <audio class="mb-3" controls>
+                    <source src="assets/sounds/كلمات/طاولة.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/طاولة.avif" alt="Image 1" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, true)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/سيارة.avif" alt="Image 2" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, false)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/قمر.avif" alt="Image 3" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, false)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/طائر.avif" alt="Image 4" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, false)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Game -->
+            <div class="game-section">
+                <audio class="mb-3" controls>
+                    <source src="assets/sounds/كلمات/قطة.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/سيارة.avif" alt="Image 1" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, false)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/قطة.avif" alt="Image 2" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, true)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/شجرة.avif" alt="Image 3" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, false)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 position-relative">
+                        <img src="assets/img/اصوات/قلم.avif" alt="Image 4" class="img-fluid game-image rounded shadow-sm" onclick="checkAnswer(this, false)">
+                        <div class="result-icon" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center bg-light py-3 mt-5 shadow-sm wow animate__animated animate__fadeInUp">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 الفرنسي الصغير. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

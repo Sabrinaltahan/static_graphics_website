@@ -1,0 +1,481 @@
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: right; /* تغيير الاتجاه إلى اليمين */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffcccb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-brand .logo-img {
+    width: 70px;
+    margin-left: 10px; /* نقل المسافة إلى اليسار */
+}
+
+.nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Navbar Hover Effects */
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    background-color: #00579a; /* Bootstrap primary color */
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link i {
+    color: #00579a;
+}
+
+.navbar-nav .nav-link:hover i {
+    color: #f5243a;
+}
+
+.navbar-nav .nav-link.active i {
+    color: #f5243a;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+    color: #f5243a; /* Highlight color for active link */
+    font-weight: bold;
+    background-color: #ffe6e1; /* Light background for active link */
+    border-radius: 5px;
+}
+
+
+.main-section {
+    margin: 50px;
+    margin-top: 8rem;
+    height: 100vh;
+}
+
+/* Carousel */
+.carousel-inner img {
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f5243a;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+h1,
+h2 {
+    color: #f5243a;
+}
+
+.lead {
+    color: #fff;
+}
+
+.text-primary {
+    color: #00579a !important;
+}
+
+/* Footer */
+footer {
+    background-color: #ffcccb;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p a {
+    color: #00579a;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+/* About Page Styles */
+.about-hero {
+    background: linear-gradient(to right, #00579a, #6fc3ff);
+}
+
+.about-hero .lead {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.text-primary {
+    color: #00579a !important;
+}
+
+.bg-primary {
+    background-color: #00579a !important;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-info {
+    color: #17a2b8 !important;
+}
+
+/* Video Section Styles */
+.video-content .row {
+    padding: 10px;
+    border: 1px solid #00579a;
+}
+
+.video-card {
+    margin-bottom: 30px;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-info {
+    padding: 20px;
+}
+
+.video-info h5 {
+    color: #00579a;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.video-info p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 2;
+}
+
+/* Ensure the video container has proper spacing */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 8px;
+}
+
+/* Make sure videos take up more space and are responsive */
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Make the video cards responsive */
+@media (max-width: 768px) {
+    .video-info {
+        margin-top: 20px;
+    }
+    .video-info h5 {
+        font-size: 1.1rem;
+    }
+    .video-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Add some padding for sections */
+section.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Video Card Hover Effect */
+.video-card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.video-card:hover iframe {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Sounds Page Styling */
+.sounds-hero {
+    background-color: #00579a; /* لون أزرق هادئ */
+    padding: 80px 0;
+    text-align: right; /* جعل النصوص تبدأ من اليمين */
+}
+
+.audio-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    direction: rtl; /* التأكد من أن البطاقة بالاتجاه الصحيح */
+}
+
+.audio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.audio-card-body h5 {
+    color: #00579a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+.audio-card-body p {
+    color: #555;
+    font-size: 1.2rem;
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #ffcccb;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .audio-card-body p {
+        font-size: 1rem;
+    }
+}
+/* Images Page Styles */
+.image-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-card:hover {
+    transform: translateY(-10px);
+}
+
+.image-card img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-card-body {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-card-body h5 {
+    color: #00579a;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.image-card-body p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Adjust card layout on smaller screens */
+@media (max-width: 768px) {
+    .image-card-body h5 {
+        font-size: 1.1rem;
+    }
+    .image-card-body p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Hero Section Background and Text */
+.images-hero {
+    background-color: #6c757d;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.images-hero p {
+    font-size: 1.25rem;
+}
+
+/* Container Padding */
+section.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* WOW */
+
+.wow {
+    visibility: hidden;
+}
+
+/* Continuous movement for hero icons */
+.icon-bounce {
+    animation: bounce 1s infinite;
+}
+
+/* يمكن إضافة هذه القاعدة في ملف CSS */
+.animate__flash {
+    animation-duration: 3s !important;
+}
+
+
+/* Keyframes for bounce effect */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Keyframes for pulsing effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Continuous pulse for icons */
+.icon-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+/* Custom Infinite Pulse Animation */
+@keyframes infinitePulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Slightly enlarge the image */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.infinite-pulse {
+    animation: infinitePulse 1.5s infinite; /* Apply the pulse animation infinitely */
+}
+
+
+/* Button hover animation */
+.btn-info {
+    animation: pulse 2s infinite;
+}
+
+.game-image {
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.game-image:hover {
+    transform: scale(1.05);
+    border: 3px solid #ffc107; /* Yellow hover border */
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
+}
+
+.game-section audio {
+    width: 50%;
+}
+
+.game-section .row {
+    padding: 10px;
+    border: 1px solid #00579a;
+}
+
+.result-icon i {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
