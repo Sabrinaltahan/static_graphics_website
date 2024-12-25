@@ -1,0 +1,8 @@
+# .gitattributes
+* text=auto
+*.css text
+*.js text
+*.html text
+*.png binary
+*.jpg binary
+*.gif binary
